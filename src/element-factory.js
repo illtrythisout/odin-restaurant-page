@@ -1,4 +1,4 @@
-export {createElement}
+export {createElement, removeElement}
 
 function createElement(tag, att, attValue, textContent, appendTo) {
     let element = document.createElement(tag);
@@ -9,4 +9,10 @@ function createElement(tag, att, attValue, textContent, appendTo) {
         element.textContent = textContent;
     }
     appendTo.appendChild(element);
+}
+
+function removeElement(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
 }
