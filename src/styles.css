@@ -18,6 +18,7 @@ img, picture, video, canvas, svg {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    line-height: 1.5;
 }
 
 @font-face {
@@ -88,11 +89,12 @@ h1 {
 .navigation.selected {
     background-color: var(--color-light);
     border-radius: 0.5rem 0.5rem 0 0;
+    color: var(--color-dark);
 }
 
 #container {
     background-color: var(--color-light);
-    padding: 3rem;
+    padding: 3rem 15rem;
     color: var(--color-dark);
 
     display: flex;
@@ -113,5 +115,8 @@ h2 {
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 1.25rem);
+    border: 5px solid var(--color-dark);
+    border-radius: 10px;
+    padding: 2rem 3rem;
 }
