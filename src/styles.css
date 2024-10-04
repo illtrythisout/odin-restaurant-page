@@ -103,10 +103,20 @@ h1 {
     gap: 2rem;
 }
 
-.seperateContent {
+.menuContainer {
+    border: 5px solid var(--color-dark);
+    border-radius: 10px;
+}
+.separateContent {
     display: flex;
     justify-content: space-between;
     width: 30vw;
+}
+.separateContent > p {
+    border: none;
+}
+p.price {
+    font-weight: 600;
 }
 
 h2 {
