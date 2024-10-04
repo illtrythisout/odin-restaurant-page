@@ -1,3 +1,4 @@
 import "./styles.css"
+import {createHome} from "./home"
 
-console.log("Greats")
+createHome()
