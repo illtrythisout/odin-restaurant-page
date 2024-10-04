@@ -1,0 +1,95 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    color: rgb(0, 0, 30);
+    font-family: Roboto;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+@font-face {
+    font-family: Canela;
+    src: url(./fonts/Canela-Regular-Trial.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Canela;
+    src: url(./fonts/Canela-Bold-Trial.otf);
+    font-weight: 600;
+}
+
+:root {
+    --color-dark: #262626;
+    --color-light: #d6d3d1;
+    --font-color: whitesmoke;
+}
+
+body {
+    background-color: var(--color-light);
+}
+
+h1 {
+    font-family: Canela;
+    width: 100vw;
+    height: 60dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--font-color);
+    font-size: calc((5dvh + 10dvw)/2);
+
+    background-image: url("./images/steakhouse-home.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#navbar {
+    height: 3rem;
+    background-color: var(--color-dark);
+
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    width: 10rem;
+    background-color: var(--color-dark);
+    border: none;
+    font-size: 1.25rem;
+    color: var(--font-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.navigation:hover {
+    background-color: #a8a29e;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.navigation.selected {
+    background-color: var(--color-light);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#container {
+    background-color: var(--color-light);
+}
